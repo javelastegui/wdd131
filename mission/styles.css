@@ -1,0 +1,54 @@
+p,
+li {
+  font-size: 20px;
+  margin-bottom: 27px;
+  word-spacing: 1px;
+  line-height: 30px;
+}
+
+h1,
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #006eb6;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-list {
+  font-style: italic;
+}
+
+.content {
+  width: 600px;
+  border: 1px solid #c8c8c8;
+  padding: 3% 13%;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  margin-top: 7%;
+  width: 150px;
+}
