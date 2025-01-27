@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Jose Velastegui" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="mission.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -18,6 +19,11 @@
   <body>
     <div class="content">
       <header>
+        <label for="mode-select">Choose a mode</label>
+        <select name="mode" id="mode-select">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
         <h1>Mission Statement</h1>
         <h2>Brigham Young University-Idaho</h2>
       </header>
