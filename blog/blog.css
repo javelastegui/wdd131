@@ -1,0 +1,103 @@
+/*
+Gold color: #EFC69B
+Red color: #AF1B3F
+Dark color: #473144
+Body font: Helvetica, Arial, sans-serif
+Headline font: Lora, Impact, serif (Lora can be found on Google Fonts.)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica", "Arial", "sans-serif";
+}
+
+h1,
+h2 {
+  font-family: "serif";
+}
+
+h1 {
+  color: #473144;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #af1b3f;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.nav-menu {
+  color: #af1b3f;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-menu ul {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: end;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  text-align: center;
+}
+
+p {
+  color: #473144;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #efc69b;
+}
+
+h1 {
+  text-align: center;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+}
+
+.post-content {
+  justify-self: center;
+}
+
+.blog-post {
+  margin-top: 20px;
+}
+
+.post-metada .date {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.post-metada p {
+  margin-bottom: 10px;
+}
+
+.post-image {
+  margin-bottom: 20px;
+  padding-left: 40px;
+}

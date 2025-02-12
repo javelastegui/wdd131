@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building a Blog</title>
+    <link rel="stylesheet" href="blog.css" />
+    <script defer src="blog.js"></script>
+    <meta name="author" content="Jose Velastegui" />
+    <meta
+      name="description"
+      content="Blog site built using HTML, CSS, and JS"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-continer"></div>
+      <h1>Kids Read For Fun</h1>
+      <hr />
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <section class="blog-post">
+        <div class="post-container">
+          <!-- Left side: Metadata-->
+          <aside class="post-metada">
+            <time class="date">July 5, 2022</time>
+            <p class="ages">10-14</p>
+            <p class="genre">Fantasy</p>
+            <p class="stars">****</p>
+          </aside>
+
+          <!--Middle: Post content-->
+          <article class="post-content">
+            <h2 class="title">Septimus Heap Book one: Magyk</h2>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
+              alt="ook cover for Septimus Heap 1"
+              class="post-image"
+            />
+            <p class="description">
+              If you enjoy stories about seventh sons of seventh sons and magyk
+              this is the book for you.
+            </p>
+          </article>
+
+          <!-- Right side: Filter section-->
+          <aside class="post Filter">
+            <div class="divider"></div>
+            <p>Filters go here</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
