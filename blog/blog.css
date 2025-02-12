@@ -101,3 +101,18 @@ h1 {
   margin-bottom: 20px;
   padding-left: 40px;
 }
+
+.skiptocontent a {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background-color: #efc69b;
+  color: #af1b3f;
+  padding: 10px 15px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skiptocontent a:focus {
+  left: 0;
+}
