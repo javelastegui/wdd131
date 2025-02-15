@@ -24,4 +24,52 @@ const articles = [
     genre: "Fantasy",
     stars: "⭐⭐⭐⭐",
   },
+  {
+    id: 3,
+    title: "Belgariad Book One: Pawn of Prophecy",
+    date: "Feb 12, 2022",
+    description:
+      "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+    imgSrc: "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+    imgAlt: "Book cover for Pawn of Prophecy",
+    ages: "12-16",
+    genre: "Fantasy",
+    stars: "⭐⭐⭐⭐⭐",
+  },
 ];
+
+const mainContent = document.querySelector("#maincontent");
+
+articles.forEach((article) => {
+  const articleSection = document.createElement("section");
+  articleSection.id = `post-${article.id}`;
+
+  articleSection.classList.add("blog-post");
+
+  articleSection.innerHTML = `
+    <div class="post-container">
+      <!-- Left side: Metadata -->
+      <aside class="post-metada">
+        <time class="date">${article.date}</time>
+        <p class="ages">${article.ages}</p>
+        <p class="genre">${article.genre}</p>
+        <p class="stars">${article.stars}</p>
+      </aside>
+
+      <!-- Middle: Post content -->
+      <article class="post-content">
+        <h2 class="title">${article.title}</h2>
+        <img src="${article.imgSrc}" alt="${article.imgAlt}" class="post-image" />
+        <p class="description">${article.description}</p>
+      </article>
+
+      <!-- Right side: Filter section (example static content) -->
+      <aside class="post Filter">
+        <div class="divider"></div>
+        <p>Filters go here</p>
+      </aside>
+    </div>
+  `;
+
+  mainContent.appendChild(articleSection);
+});

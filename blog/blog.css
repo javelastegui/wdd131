@@ -13,7 +13,7 @@ Headline font: Lora, Impact, serif (Lora can be found on Google Fonts.)
 }
 
 body {
-  font-family: "Helvetica", "Arial", "sans-serif";
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 h1,
@@ -25,11 +25,15 @@ h1 {
   color: #473144;
   margin-top: 50px;
   margin-bottom: 50px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 2.6em;
 }
 
 h2 {
   color: #af1b3f;
   margin-bottom: 20px;
+  font-size: xx-large;
 }
 
 nav a {
@@ -71,13 +75,10 @@ hr {
   background-color: #efc69b;
 }
 
-h1 {
-  text-align: center;
-}
-
 .post-container {
   display: grid;
-  grid-template-columns: 150px 1fr 150px;
+  grid-template-columns: 420px 1fr 420px;
+  gap: 20px;
 }
 
 .post-content {
@@ -91,15 +92,29 @@ h1 {
 .post-metada .date {
   display: inline-block;
   margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #473144;
+  margin-top: 12px;
 }
 
 .post-metada p {
   margin-bottom: 10px;
 }
 
+.post-metada {
+  justify-items: end;
+  border-right: #efc69b 2px solid;
+  padding-right: 30px;
+}
+
 .post-image {
+  display: block;
+  margin: 0 auto;
   margin-bottom: 20px;
-  padding-left: 40px;
+}
+
+.description {
+  margin-top: 25px;
 }
 
 .skiptocontent a {
