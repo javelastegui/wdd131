@@ -45,8 +45,13 @@ body {
 
 .card-back {
   display: grid;
-  grid-template-columns: 1fr 100px;
-  grid-template-rows: ;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cvv-container {
+  grid-column: 1;
+  align-self: self-end;
+  justify-self: end;
 }
 
 .card-back-container {
@@ -113,4 +118,8 @@ body {
 .date-container {
   width: min-content;
   justify-self: right;
+}
+
+#cvv {
+  width: min-content;
 }
