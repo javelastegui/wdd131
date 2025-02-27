@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: helvetica;
+  position: relative;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 190px 100px;
+  grid-template-rows: 30px 200px 30px 30px;
+  gap: 20px;
+}
+
+.card-front,
+.card-back {
+  background-color: #cccccc;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  outline: none;
+  border: none;
+  width: 390px;
+  height: 250px;
+  padding: 20px 30px 0;
+}
+
+#card-image {
+  /*float: right;*/
+  height: 100%;
+}
+
+.card-front {
+  box-shadow: 5px 5px 6px #5f5f5f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.card-back {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  grid-template-rows: ;
+}
+
+.card-back-container {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  z-index: -2;
+}
+
+.submit-button {
+  grid-column: 4;
+  grid-row: 4;
+  align-items: center;
+  justify-items: end;
+}
+
+#card-stripe {
+  width: 360px;
+  height: 55px;
+  background-color: #515151;
+}
+
+.image-container {
+  align-self: center;
+  justify-self: end;
+}
+
+#card-total {
+  background-color: transparent;
+  border: none;
+  width: 80px;
+}
+
+.card-total-container {
+  align-self: center;
+}
+
+.card-name-container {
+  grid-column: 1;
+}
+
+#card-name {
+  width: 200px;
+  height: 30px;
+}
+
+.expiry-date-container {
+  grid-column: 2;
+}
+
+#card-number-container {
+  grid-column: 1 / 2;
+}
+
+#card-number {
+  height: 30px;
+}
+
+#expiry-month,
+#expiry-year {
+  width: 40px;
+  height: 30px;
+}
+
+.date-container {
+  width: min-content;
+  justify-self: right;
+}
