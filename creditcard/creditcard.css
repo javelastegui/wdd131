@@ -52,6 +52,9 @@ body {
   grid-column: 1;
   align-self: self-end;
   justify-self: end;
+  width: 80px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .card-back-container {
@@ -122,4 +125,6 @@ body {
 
 #cvv {
   width: min-content;
+  width: 70px;
+  height: 30px;
 }
