@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe book</title>
+    <link rel="stylesheet" href="recipes.css" />
+    <script defer src="main.js"></script>
+    <script defer src="recipes.mjs"></script>
+    <meta name="author" content="Jose Velastegui" />
+    <meta
+      name="description"
+      content="Recepe cite. This website is responsive and include good SEO, is accessible, and gave me the opportunity to practice using Flexbox."
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+    </style>
+    <meta property="og:title" content="Recipe book" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Recepe cite. This website is responsive and include good SEO, is accessible, and gave me the opportunity to practice using Flexbox."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/javelastegui/wdd131/blob/5aba67f5c3df254918804a1a43d7f4f53ead267a/recipes/images/apple-crisp.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://javelastegui.github.io/wdd131/recipes/index.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="images/recipe-book.png" class="logo_img" alt="logo" />
+        <h1>Recepe Book</h1>
+      </div>
+      <div class="form-container">
+        <form action="/search" method="GET" class="search_bar">
+          <input type="text" id="search" name="q" placeholder="Find a recipe" />
+          <button class="button-submit" type="submit">
+            <img
+              class="search_icon"
+              src="images/search.svg"
+              alt="search icon"
+            />
+          </button>
+        </form>
+      </div>
+      <hr />
+    </header>
+    <body>
+      <div class="recipe-container">
+        <div class="img-container">
+          <img src="images/apple-crisp.jpg" alt="Apple Crisp picture" />
+        </div>
+        <div class="content-container">
+          <p class="tags">dessert</p>
+          <h3 class="name">Apple Crisp</h3>
+          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+          </span>
+          <p class="description">
+            This apple crisp recipe is a simple yet delicious fall dessert
+            that's great served warm with vanilla ice cream.
+          </p>
+        </div>
+      </div>
+    </body>
+    <footer>
+      <div class="footer-container">
+        <div class="flaticon-container">
+          <a
+            href="https://www.flaticon.com/free-icons/recipe"
+            title="recipe icons"
+            >Recipe icons created by Freepik - Flaticon</a
+          >
+        </div>
+        <div class="social-container">
+          <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"
+              ><img src="images/instagram_icon.svg" alt="instagram icon"
+            /></a>
+            <a href="#"
+              ><img src="images/youtube_icon.svg" alt="youtube icon"
+            /></a>
+            <a href="#"
+              ><img src="images/pinterest_icon.svg" alt="pinterest icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
