@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zurplus</title>
+    <link type="text/css" rel="stylesheet" href="styles/zurplus.css" />
+    <link rel="icon" href="images/zurplus-favicon.png" type="image/png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+    </style>
+    <script src="main.js" type="module"></script>
+    <meta name="author" content="Jose Velastegui" />
+    <meta
+      name="description"
+      content="Zurplus is a sustainable resource-sharing platform that connects businesses all over the United States, with leftover materials to those who can repurpose them."
+    />
+  </head>
+  <body>
+    <header>
+      <div class="main-menu-container">
+        <div class="logo-container">
+          <img src="images/zurplus-logo.png" alt="Zurplus logo" />
+        </div>
+        <div class="manu-container">
+          <nav>
+            <ul>
+              <li><a href="index.html">Zurplus</a></li>
+              <li><a href="about_us.html">About us</a></li>
+              <li><a href="#">Log in</a></li>
+            </ul>
+          </nav>
+          <div class="button-container">
+            <button class="button-menu" type="button">Donate</button>
+          </div>
+        </div>
+      </div>
+      <div class="filter-container">
+        <h4>Filter</h4>
+        <nav>
+          <li><a href="#">Waste type</a></li>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="title_container">
+          <h1>What's left over?</h1>
+          <div class="search-container">
+            <form action="/search" method="GET" class="search_bar">
+              <input type="text" id="search" name="q" placeholder="Search.." />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
