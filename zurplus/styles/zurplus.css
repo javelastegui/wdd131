@@ -29,10 +29,15 @@
   --nav-hover-background-color: var(--primary-color);
 }
 
+html,
+body {
+  height: 100%;
+}
+
 h1,
 h4 {
   color: var(--accent2-color);
-  font-family: var(--heading-font);
+  font-family: var(--paragraph-font);
 }
 
 h2 {
@@ -58,6 +63,7 @@ li {
   background-color: var(--primary-color);
   padding-left: 3rem;
   padding-top: 5rem;
+  min-height: 100vh;
 }
 
 .header-main-container {
@@ -81,6 +87,10 @@ li {
   width: 40px;
 }
 
+.logo-container {
+  margin-bottom: 1em;
+}
+
 .main-container-section {
   margin-top: 5rem;
   margin-left: 3.5rem;
@@ -88,6 +98,36 @@ li {
 
 .menu-list {
   list-style: none;
+  margin-bottom: 1em;
+}
+
+.menu-list li {
+  margin-bottom: 0.5em;
+}
+
+.menu-list li a {
+  color: black;
+}
+
+.menu-list li a:hover {
+  color: var(--accent1-color);
+}
+
+.button-menu {
+  background-color: var(--accent1-color);
+  padding: 0.7em 3em;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button-menu:hover {
+  background-color: var(--primary-color);
+  padding: 0.7em 3em;
+  color: var(--accent1-color);
+  border: solid var(--accent1-color);
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 nav {
@@ -151,7 +191,7 @@ nav {
     ul li ul li a:hover {
       padding-left: 10px;
       border-left: 2px solid var(--accent1-color);
-      transition: all 0.3s ease;
+      transition: all 0.2s ease;
     }
   }
 }
@@ -175,6 +215,7 @@ ul li ul li a {
 
 .product img {
   width: 100%;
+  max-height: 220px;
   border-radius: 10px;
 }
 
