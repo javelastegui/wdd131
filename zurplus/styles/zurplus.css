@@ -60,10 +60,8 @@ li {
 }
 
 .main-menu-container {
-  background-color: var(--primary-color);
   padding-left: 3rem;
   padding-top: 5rem;
-  min-height: 100vh;
 }
 
 .header-main-container {
@@ -73,6 +71,7 @@ li {
 
 .header-container {
   grid-column-start: 1;
+  background-color: var(--primary-color);
 }
 
 .main-container {
@@ -236,4 +235,15 @@ hr {
   margin-bottom: 1.5em;
   margin-top: 0.5em;
   width: 96%;
+}
+
+#search {
+  border: #1a1a19 solid 1.5px;
+  border-radius: 5em;
+  width: 60%;
+  padding: 1em 2em;
+}
+
+.search-container {
+  margin-top: 0.9em;
 }
